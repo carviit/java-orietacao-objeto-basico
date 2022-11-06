@@ -5,16 +5,16 @@ public class Conta {
     int numero;
     String nomeTitular;
 
-    void deposito(double valor){
+    public void deposito(double valor){
 
-        saldo += valor;
+        this.saldo += valor;
 
     }
 
-    void saque(double valor){
+    public void saque(double valor){
 
-      saldo-=valor;
-
+        this.saldo -= valor;
+        
     }
 
 }
