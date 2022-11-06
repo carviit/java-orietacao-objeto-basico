@@ -5,4 +5,16 @@ public class Conta {
     int numero;
     String nomeTitular;
 
+    void deposito(double valor){
+
+        saldo += valor;
+
+    }
+
+    void saque(double valor){
+
+      saldo-=valor;
+
+    }
+
 }
