@@ -39,10 +39,6 @@ public class CriaConta {
 
                 primeiraConta.saque(valor);
 
-                System.out.println("\nVocê sacou R$ " + valor);
-
-                System.out.println("\nSaldo = R$ " + primeiraConta.saldo);
-
                 break;
 
             case 2:
@@ -50,10 +46,6 @@ public class CriaConta {
                 valor =  input.nextDouble();
 
                 primeiraConta.deposito(valor);
-
-                System.out.println("\nVocê depositou R$ " + valor);
-
-                System.out.println("\nSaldo = R$ " + primeiraConta.saldo);
 
                 break;
         }
