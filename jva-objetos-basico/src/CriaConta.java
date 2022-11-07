@@ -7,6 +7,8 @@ public class CriaConta {
 
         Conta primeiraConta = new Conta();
 
+        Conta segundaConta = new Conta();
+
         int opc;
         double valor;
 
@@ -26,6 +28,7 @@ public class CriaConta {
 
         System.out.println("1 - SAQUE");
         System.out.println("2 - DEPÓSITO");
+        System.out.println("3 - TRANSFERÊNCIA");
 
         System.out.print("\n\nOPÇÃO : ");
         
@@ -48,9 +51,18 @@ public class CriaConta {
                 primeiraConta.deposito(valor);
 
                 break;
-        }
-        
-        input.close();
 
+            case 3:
+                System.out.print("\nDigite o valor para transferência: ");
+                valor =  input.nextDouble();
+
+                primeiraConta.transfere(valor, segundaConta);
+                System.out.println("\nSaldo da SEGUNDA CONTA = R$ " + segundaConta.saldo);
+                System.out.println("Saldo da PRIMEIRA CONTA = R$ " + primeiraConta.saldo);
+
+        input.close();
+        
+        }   
     }
+
 }

@@ -40,9 +40,31 @@ public class Conta {
             System.out.println("\nSaldo = R$ " + this.saldo);
 
             return false;
+
         }
-        
 
     }
 
+        public boolean transfere(double valor, Conta destino){
+
+            if(this.saldo >= valor){
+
+                this.saldo -= valor;
+                
+                destino.saldo += valor;
+
+                return true;
+
+            } else {
+
+                System.out.println("\nVocẽ não possui R$ " + valor + " em sua conta bancária");
+
+                System.out.println("\nSaldo = R$ " + this.saldo);
+
+                return false;
+
+            }
+            
+        }
+        
 }
