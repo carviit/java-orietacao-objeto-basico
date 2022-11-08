@@ -1,7 +1,9 @@
 public class Conta {
     
+    private int numero;
+    private int agencia;
     private double saldo;
-    Cliente titular;
+    private Cliente titular;
         
     public void deposito(double valor){
 
@@ -30,9 +32,35 @@ public class Conta {
         }
     }
 
-    public double pegaSaldo(){
+    public double getSaldo(){
 
         return this.saldo;
     }
+
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
+    }
+
+    public Cliente getTitular() {
+        return titular;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setAgencia(int agencia) {
+        this.agencia = agencia;
+    }
+
+    public int getAgencia() {
+        return agencia;
+    }
+
+
 
 }   
