@@ -19,7 +19,7 @@ public class Banco {
 
         novaConta.setTitular(novoCliente);
 
-        novaConta.getTitular().setCpf("999.999.999-51");
+        novaConta.getTitular().setCpf("777.888.999-55");
 
         novaConta.getTitular().setProfissao("Caminhoneiro");
 
@@ -34,13 +34,6 @@ public class Banco {
         System.out.println("CPF = " + novaConta.getTitular().getCpf());
 
         System.out.println("PROFISSÃO = " + novaConta.getTitular().getProfissao());
-
-
-
-
-
-
-
 
         input.close(); 
      }
