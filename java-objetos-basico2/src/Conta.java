@@ -21,8 +21,8 @@ public class Conta {
 
     public void saque(double valor){
 
-        if(this.saldo >= valor){
-
+        if((this.saldo >= valor) && (valor > 0)){
+ 
             this.saldo -= valor;
 
             System.out.println("\nVocê sacou R$ " + valor);
@@ -40,5 +40,3 @@ public class Conta {
     }
 
 }   
-    
-
