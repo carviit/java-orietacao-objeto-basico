@@ -4,16 +4,20 @@ public class Banco {
     public static void main(String[] args) throws Exception {
 
         Scanner input = new Scanner(System.in);
+ 
+        Conta novaConta = new Conta(2344, 12);
 
-        Conta novaConta = new Conta();
+        Conta segundaConta = new Conta(2345, 545);
+
+        Conta terceiraConta = new Conta(4758, 456);
 
         Cliente novoCliente = new Cliente();
 
         novoCliente.setNome("Carlos Vitor");
 
-        novaConta.setNumero(23444);
+        //novaConta.setNumero(23444);
 
-        novaConta.setAgencia(12);
+        //novaConta.setAgencia(12);
 
         novaConta.deposito(100.50);
 
@@ -34,6 +38,8 @@ public class Banco {
         System.out.println("CPF = " + novaConta.getTitular().getCpf());
 
         System.out.println("PROFISSÃO = " + novaConta.getTitular().getProfissao());
+
+        System.out.println("NÚMERO DE CONTAS = " + Conta.getTotal());
 
         input.close(); 
      }
